@@ -29,12 +29,7 @@ def main():
         x, y = [int(j) for j in input().split()]
         G.insert(x, y)
 
-    source = int(input("Source vertex: "))
-    visited = [0 for i in range(G.V)]
-    visited[source] = 1
-    dist = [-1 for i in range(G.V)]
-    dist[source] = 0
-    
+    source = int(input("Source vertex: "))    
     BFS(G, source)
     
     print("dist of vertex i from ", source)
