@@ -67,7 +67,7 @@ def main():
 	w.insert("q213")
 	w.insert("act")
 	w.insert("tac")
-	w.insert("tac")
+	w.insert("cat")
 	w.insert("abc")
 	w.insert("adc")
 	w.keys()

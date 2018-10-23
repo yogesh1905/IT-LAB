@@ -1,5 +1,5 @@
 import java.util.*;
-public class  matrix {
+public class  four {
 	public static void main(String args[]) {
 		Scanner obj = new Scanner (System.in);
 		Scanner obj1 = new Scanner (System.in);

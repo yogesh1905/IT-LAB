@@ -13,8 +13,11 @@ def buildFromFile(hashTable, fName):
 def main():
 	t = HashTable()
 	buildFromFile(t, 'small.dict')
-	t.keys()
-	print(t.search(input("enter word to search for: "), 1))
-	
+	#t.keys()
+	ans = t.search(input("enter word to search for: "), 1)
+	if(ans == True):
+		print("valid word")
+	else:
+		print("invalid word")
 if __name__ == '__main__':	
     main()

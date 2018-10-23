@@ -9,6 +9,9 @@ abstract class Shape {
 		this.l = l; this.b = b; this.h = h;
 	}
 
+	void print() {
+		System.out.println("Shape Class");
+	}
 	abstract double area();
 	abstract double perimeter();
 	abstract double volume();
@@ -19,6 +22,10 @@ class Rectangle extends Shape {
 		super(l, b);
 	}
 
+	@Override
+	void print() {
+		System.out.println("Rect");
+	}
 	@Override
 	double area() {
 		a = l*b;
@@ -40,7 +47,10 @@ class Square extends Rectangle {
 	Square(int l) {
 		super(l, l);
 	}
-
+	@Override
+	void print() {
+		System.out.println("Square");
+	}
 	@Override
 	double perimeter() {
 		p = 4*l;
@@ -56,9 +66,12 @@ class Circle extends Shape {
 		this.r = r;
 	}
 	@Override
+	void print() {
+		System.out.println("Circle");
+	}
+	@Override
 	double area() {
 		a = (double)(pi * (r * r));
-		System.out.println("arsdea " + a);
 		return a;
 	}
 
@@ -73,11 +86,14 @@ class Circle extends Shape {
 		return 0;
 	}
 }
+
 class inherit {
 	public static void main(String args[]) {
 		Shape s = new Rectangle(2,3);
-		System.out.println("area " + s.perimeter());
+		System.out.println("peri " + s.perimeter());
 		s = new Square(2);
-		System.out.println("area " + s.perimeter());
+		System.out.println("area " + s.area());
+		s = new Circle(1);
+		System.out.println("circPeri: " + s.perimeter());
 	}
 }

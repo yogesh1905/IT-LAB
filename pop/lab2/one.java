@@ -18,9 +18,30 @@ class one{
 			case "e":
 				System.out.println("vowel");
 			break;
-			
+			//if (Character.isLetter(j)) 
+			case "q":
+			case "w":
+			case "r":
+			case "t":
+			case "y":
+			case "s":
+			case "d":
+			case "f":
+			case "g":
+			case "h":
+			case "j":
+			case "k":
+			case "l":
+			case "z":
+			case "x":
+			case "c":
+			case "v":
+			case "b":
+			case "n":
+			case "m":
+				System.out.println("consonent"); break;
 			default :
-			System.out.println("consonent");
+				System.out.println("neither consonent nor vowel");
 				
 		}
 	}

@@ -28,6 +28,32 @@ do
     done
 done
 
+echo "1:  "
+for ((i=0; i<a; i++))
+do
+    for((j=0;j<a;j++))
+    do
+        n=$(($a*$i + $j))
+        printf ${x[$n]}
+        printf " "
+    done
+    echo ""
+done
+
+echo ""
+echo "2: "
+for ((i=0; i<a; i++))
+do
+    for((j=0;j<a;j++))
+    do
+        n=$(($a*$i + $j))
+        printf ${y[$n]}
+        printf " "
+    done
+    echo ""
+done
+
+echo ""
 echo "sum: "
 for ((i=0; i<a; i++))
 do

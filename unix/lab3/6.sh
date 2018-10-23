@@ -11,7 +11,7 @@ echo enter binary number: ”
 read d
 echo "bin to hexa"
 echo "obase=16;ibase=2; ${d}" | bc
-echo enter hexadecimal number: ”
+echo enter hex number: ”
 read c
 echo "hexa to decimal"
 echo "ibase=16; ${c}" | bc
