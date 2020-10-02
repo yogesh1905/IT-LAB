@@ -3,8 +3,9 @@
 class check_heap: 
 	def __init__(self, value): 
 		self.key = value 
-		self.left = None
 		self.right = None
+		self.left = None
+		
 	
 	def count_nodes(self, root): 
 		if root is None: 
