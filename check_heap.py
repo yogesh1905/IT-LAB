@@ -35,8 +35,7 @@ class check_heap:
 			return False
 		return (self.complete_tree_util(root.left, 2 *
 									index + 1, node_count) and
-			self.complete_tree_util(root.right, 2 *
-									index + 2, node_count)) 
+			self.complete_tree_util(root.right, 2 *index + 2, node_count)) 
 	
 	def check_if_heap(self): 
 		node_count = self.count_nodes(self) 
@@ -47,7 +46,7 @@ class check_heap:
 			return False
 
 # Driver Code 
-root = check_heap(5) 
+root = check_heap(10) 
 root.left = check_heap(2) 
 root.right = check_heap(3) 
 root.left.left = check_heap(1) 
